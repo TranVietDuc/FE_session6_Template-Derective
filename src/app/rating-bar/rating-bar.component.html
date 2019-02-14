@@ -1,0 +1,16 @@
+<p>
+  rating-bar works!
+</p>
+<p style="font-size: xx-large">{{rate}}</p>
+<br>
+<div *ngIf="isDisplayed">
+  <span *ngFor="let i of numbers"
+        class="pointSquare"
+        [style.background-color]="i<=rate? 'pink':'grey'"
+         (click)="click(i)"
+         (mouseover)="click(i)">{{i}}</span>
+  <br>
+</div>
+<input type="button" (click)="clickHideButton()" [value]="isDisplayed? 'Hide':'Display'">
+
+<br>

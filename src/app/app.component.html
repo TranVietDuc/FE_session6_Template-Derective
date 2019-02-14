@@ -19,3 +19,12 @@
 </ul>
 
 <router-outlet></router-outlet>
+<app-rating-bar rate="6" _max="abc"></app-rating-bar>
+
+<app-countdown-timer [seconds]="60"></app-countdown-timer>
+<app-countdown-timer-get-set seconds="abc"></app-countdown-timer-get-set>
+<app-countdown-timer-event seconds="10" (finish)="finishCountdown()">
+</app-countdown-timer-event>
+<p id="countdownMsg">{{ countdownMsg }}</p>
+<app-name-card cardName="duc" email="duc@gmail.com" phone="12345678"></app-name-card>
+<app-progress-bar width="65"></app-progress-bar>
